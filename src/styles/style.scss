@@ -1,0 +1,87 @@
+//libs
+@import "../local_modules/swiper/swiper-bundle.min";
+
+//adds
+@import "utils/variables.scss";
+
+@import "mixins/media.scss";
+
+@import "utils/fonts.scss";
+
+//total style
+@import "common/global.scss";
+
+@import "common/main.scss";
+
+@import "common/container.scss";
+
+//global blocks
+@import "common/inner.scss";
+
+@import "common/header.scss";
+
+@import "common/footer.scss";
+
+//sections
+@import "common/main-elements.scss";
+
+@import "common/sliders.scss";
+
+@import "common/tabs-section.scss";
+
+@import "common/gallery-section.scss";
+
+@import "common/form-section.scss";
+
+@import "common/checks-section.scss";
+
+@import "common/video-section.scss";
+
+@import "common/full-section.scss";
+
+@import "common/tilt-section.scss";
+
+//elements
+@import "common/slider.scss";
+
+@import "common/burger.scss";
+
+@import "common/move-up.scss";
+
+@import "common/title.scss";
+
+@import "common/button.scss";
+
+@import "common/checkbox.scss";
+
+@import "common/breadcrumbs.scss";
+
+@import "common/tabs.scss";
+
+@import "common/gallery.scss";
+
+@import "common/input.scss";
+
+@import "common/select.scss";
+
+@import "common/form.scss";
+
+@import "common/file-stiller.scss";
+
+@import "common/stairs.scss";
+
+@import "common/video.scss";
+
+@import "common/video-yt.scss";
+
+@import "common/anim-appear.scss";
+
+@import "common/parallax.scss";
+
+@import "common/scroll-parallax.scss";
+
+@import "common/card.scss";
+
+@import "common/dropdown.scss";
+
+@import "common/popups.scss";

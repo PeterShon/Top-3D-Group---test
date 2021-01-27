@@ -1,0 +1,32 @@
+.scroll-parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 11, 46);
+  overflow: hidden;
+  &__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &_1 {
+      background: url(../img/rocket.svg) 50% 40%/100px no-repeat;
+    }
+    &_2 {
+      background: url(../img/rocket.svg) 70% 30%/150px no-repeat;
+    }
+    &_3 {
+      background: url(../img/rocket.svg) 20% 40%/200px no-repeat;
+    }
+    &_4 {
+      top: 100%;
+      width: 90%;
+      height: auto;
+      padding: 50%;
+      background: radial-gradient(rgb(0, 0, 65), rgb(0, 60, 255) 60%, rgb(0, 225, 255) 70%, rgb(0, 68, 255) 71%, rgb(0, 60, 255) 100%);
+      opacity: 0.9;
+      border-radius: 50%;
+      box-shadow: 0 0 20px white;
+    }
+  }
+}

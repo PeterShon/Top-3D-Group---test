@@ -1,0 +1,87 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  &__tab-road {
+    grid-column: 1/-1;
+    display: flex;
+    .tabs_vertical & {
+      flex-direction: column;
+      grid-column: 1/6;
+      grid-row: 1/-1;
+    }
+  }
+  &__tab {
+    padding: 20px 20px 20px 20px;
+
+    border-radius: 30px;
+    border-top: 1px solid lightskyblue;
+    border-right: 1px solid lightskyblue;
+
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      background-color:  rgb(199, 234, 255);
+    }
+    &:not(:first-child) {
+      margin-left: 10px;
+      .tabs_vertical & {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      .tabs_spoiler & {
+        margin: 0;
+      }
+    }
+    &_active {
+      background-color:  lightskyblue;
+      color: white;
+      &:hover {
+        background-color:  rgb(109, 199, 255);
+      }
+    }
+    .tabs_spoiler & {
+      grid-column: 1/-1;
+    }
+  }
+  &__item-body {
+    visibility: hidden;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+
+    padding: 10px;
+    &_active {
+      animation-name: appear;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    .tabs_vertical & {
+      flex-direction: column;
+      grid-column: 6/-1;
+      grid-row: 1/-1;
+    }
+    .tabs_spoiler & {
+      max-height: 0;
+      grid-column: 1/-1;
+      grid-row: auto;
+      transition: 0.3s;
+      &_active {
+        max-height: 500px;
+      }
+    }
+  }
+  &__item-text {}
+}

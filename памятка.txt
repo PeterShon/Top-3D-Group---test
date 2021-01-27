@@ -1,0 +1,13 @@
+Комманда сборки сборки: npm i
+Комманда старта проекта: npm run start
+Комманда сборки проекта: npm run build
+
+Имена якорей для JS: js_name
+
+Спросить заказчика:
+-- нужно ли минифицировать код
+
+Плагин choices.js select'ов:
+  https://joshuajohnson.co.uk/Choices/
+  https://codepen.io/dev_piki/pen/gyBwOm
+  https://github.com/jshjohnson/Choices

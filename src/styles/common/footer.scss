@@ -1,0 +1,108 @@
+/* footer */
+.footer {
+  &__container {}
+  &__inner {
+    padding: 60px 0 30px;
+  }
+  /* footer - logo */
+  &__logo {
+    grid-area: 1/1/3/4;
+  }
+  &__logo-img {}
+  /* footer - nav */
+  &__nav {
+    grid-area: 1/4/3/7;
+  }
+  &__nav-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    & li {
+      & a {
+        display: block;
+        padding: 5px 5px;
+        color: black;
+        transition: 0.5s;
+        &:hover {
+          background-color: lightblue;
+          color: white;
+          transition: 0s;
+        }
+      }
+    }
+  }
+  /* footer - widgets */
+  &__widgets-box {
+    &_contacts {
+      grid-area: 1/7/2/13;
+    }
+    &_address {
+      grid-area: 2/7/3/13;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__contacts-header {
+    align-self: stretch;
+
+    margin-bottom: 10px;
+
+    text-align: end;
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+  }
+  &__phone {
+    position: relative;
+    display: block;
+
+    text-align: end;
+    color:black;
+    &::before {
+      content: '- ';
+      position: absolute;
+      left: -10px;
+      visibility: hidden;
+    }
+    &:hover {
+      &::before {
+        visibility: visible;
+      }
+    }
+  }
+  &__email {
+    position: relative;
+    display: block;
+
+    text-align: end;
+    color:black;
+    &::before {
+      content: '- ';
+      position: absolute;
+      left: -10px;
+      visibility: hidden;
+    }
+    &:hover {
+      &::before {
+        visibility: visible;
+      }
+    }
+  }
+  &__address {}
+  &__address-header {
+    margin-bottom: 10px;
+
+    text-align: end;
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+  }
+  &__address-filler {
+    display: block;
+    text-align: end;
+  }
+}

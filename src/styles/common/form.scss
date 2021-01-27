@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  &__utm, &__locker {
+    display: none;
+  }
+  &__header {
+  }
+  &__body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px 20px;
+    align-items: end;
+  }
+  &__input {
+    grid-column: span 2;
+  }
+  &__select {
+    grid-column: span 3;
+  }
+  &__file-stiller {
+    grid-column: span 3;
+  }
+  &__checkbox {
+    grid-column: span 4;
+  }
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 20px;
+    grid-column: span 2;
+
+    background-color: rgb(255, 252, 96);
+    border: 5px solid rgb(111, 0, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    
+    font-size: 18px;
+
+    transition: 0.3s;
+    &:hover {
+      background-color: rgb(255, 253, 148);
+      border: 5px solid rgb(197, 153, 255);
+    }
+  }
+}

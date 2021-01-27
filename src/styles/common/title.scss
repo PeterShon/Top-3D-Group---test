@@ -1,0 +1,16 @@
+.title {
+  & > * {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  &_less {
+    & > * {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: left;
+      margin: 0 0 15px;
+    }
+  }
+}

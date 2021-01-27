@@ -1,0 +1,57 @@
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 11, 46);
+  overflow: hidden;
+  &__text-box {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    position: absolute;
+    color: white;
+    font-size: calc(8vw * var(--fs));
+    font-weight: 900;
+    opacity: calc(0.05 * (var(--fs)));
+    transition: 0.15s;
+
+    
+    animation-name: textShine;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+  }
+  @keyframes textShine {
+    0% {text-shadow: 0 0 20px white;}
+    50% {text-shadow: 0 0 100px rgb(168, 255, 255);}
+    100% {text-shadow: 0 0 20px white;}
+  }
+  &__star-box {
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+  &__star {
+    position: absolute;
+    width: calc(15px *  (var(--sz)));
+    height: calc(15px *  (var(--sz)));
+    background-color: white;
+    opacity: 0.2;
+    border-radius: 50%;
+    left: var(--x);
+    top: var(--y);
+    animation-name: shine;
+    animation-delay: calc(15s * var(--shine));
+    animation-iteration-count: infinite;
+    animation-duration: 1.7s;
+  }
+  @keyframes shine {
+    0% {opacity: .2; box-shadow: 0 0 0 white;}
+    50% {opacity: 1; box-shadow: 0 0 10px white;}
+    100% {opacity: .2; box-shadow: 0 0 0 white;}
+  }
+}

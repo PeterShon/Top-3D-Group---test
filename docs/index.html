@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>New page</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header js_lock-padding">
+      <div class="header__container container">
+        <div class="header__inner inner"><a class="header__logo" href="#/?utm_source=istochnik&amp;utm_medium=organic&amp;utm_campaign=test_of_utm"><img class="header__logo-img" src="./img/logo.png" alt="logo"></a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__dropdown dropdown">
+                <button class="dropdown__btn">Меню</button>
+                <div class="dropdown__body">
+                  <ul class="dropdown__list">
+                    <li><a href="#">Основные элементы</a></li>
+                    <li><a href="#">Слайдер</a></li>
+                    <li><a href="#">Табы</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Форма</a></li>
+                    <li><a href="#">Чекпоинты</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Пункт 1</a></li>
+              <li><a href="#">Пункт 2</a></li>
+              <li><a href="#">Пункт 3</a></li>
+              <li><a href="#">Пункт 4</a></li>
+              <li><a href="#">Пункт 5</a></li>
+            </ul>
+          </nav>
+          <div class="header__widgets">
+            <div class="header__widgets-box header__widgets-box_first">
+              <div class="header__widget1"></div>
+              <div class="header__burger burger">
+                <div class="burger__button-wrapper">
+                  <div class="burger__button">
+                    <div class="burger__button-el burger__button-el_top"></div>
+                    <div class="burger__button-el burger__button-el_middle"></div>
+                    <div class="burger__button-el burger__button-el_bottom"></div>
+                  </div>
+                </div>
+                <div class="burger__body">
+                  <div class="burger__container container">
+                    <div class="burger__inner inner">
+                      <nav class="burger__nav">
+                        <ul class="burger__nav-list">
+                          <li><a href="#">Основные элементы</a></li>
+                          <li><a href="#">Слайдер</a></li>
+                          <li><a href="#">Табы</a></li>
+                          <li><a href="#">Галерея</a></li>
+                          <li><a href="#">Форма</a></li>
+                          <li><a href="#">Чекпоинты</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-elements">
+        <div class="main-elements__container container">
+          <div class="main-elements__inner inner">
+            <div class="main-elements__title title">
+              <h2 class="_an-i _nra _an-up">Основные элементы</h2>
+            </div>
+            <div class="main-elements__box main-elements__box_button"><a class="main-elements__button button js_popup-link" href="#popup-name">Кнопка вызывающая окно</a></div>
+            <div class="main-elements__box main-elements__box_checkbox">
+              <label class="main-elements__checkbox checkbox">
+                <input type="checkbox"><span class="checkbox__fake"></span>этот чекбокс имеет кликабельный текст
+              </label>
+            </div>
+            <div class="main-elements__box main-elements__box_breadcrumbs">
+              <ul class="main-elements__breadcrumbs breadcrumbs">
+                <li><a href="#">крошка #1</a></li>
+                <li><a href="#">крошка #2</a></li>
+                <li><a href="#">крошка #3</a></li>
+                <li><a href="#">крошка #4</a></li>
+                <li><a href="#">крошка #5</a></li>
+                <li><a href="#">Корочка</a></li>
+              </ul>
+            </div>
+            <div class="main-elements__box main-elements__box_input">
+              <div class="main-elements__input input">
+                <input class="input__body" type="text" placeholder=" ">
+                <div class="input__placeholder">Текст-подсказка</div>
+              </div>
+            </div>
+            <div class="main-elements__box main-elements__box_select">
+              <select class="main-elements__select selecter" id="main-elements__select" name="select">
+                <option value="">Выбирите строку</option>
+                <option value="Если"></option>
+                <option value="Много"></option>
+                <option value="Нажимать"></option>
+                <option value="Можно"></option>
+                <option value="Мой"></option>
+                <option value="Пароль"></option>
+                <option value="Взломать"></option>
+              </select>
+            </div>
+            <div class="main-elements__box main-elements__box_jquery">
+              <div class="main-elements__jquery jquery"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sliders">
+        <div class="sliders__container container">
+          <div class="sliders__inner inner">
+            <div class="sliders__title title">
+              <h2 class="_an-i _nra _an-up">Слайдеры</h2>
+            </div>
+            <div class="sliders__box sliders__box_slider">
+              <div class="sliders__slider slider">
+                <div class="slider__wrapper swiper-wrapper">
+                  <div class="swiper-slide slider__item">slide #1</div>
+                  <div class="swiper-slide slider__item slider__item_green">slide #2</div>
+                  <div class="swiper-slide slider__item slider__item_pink">slide #3</div>
+                  <div class="swiper-slide slider__item slider__item_orange">slide #4</div>
+                  <div class="swiper-slide slider__item slider__item_blue">slide #5</div>
+                </div>
+                <div class="slider__navigation-box">
+                  <div class="slider__button slider__button_prev"></div>
+                  <div class="slider__pagination"></div>
+                  <div class="slider__button slider__button_next"></div>
+                  <div class="slider__scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tabs-section">
+        <div class="tabs-section__container container">
+          <div class="tabs-section__inner inner">
+            <div class="tabs-section__title title">
+              <h2 class="_an-i _nra _an-up">Табы</h2>
+            </div>
+            <div class="tabs-section__box tabs-section__box_tabs">
+              <div class="tabs-section__title title title_less">
+                <h3 class="_an-i _nra _an-up">Обычные табы</h3>
+              </div>
+              <div class="tabs-section__tabs tabs">
+                <!--tab-->
+                <div class="tabs__tab-road">
+                  <div class="tabs__tab tabs__tab_active">Кнопка #1</div>
+                  <div class="tabs__tab">Кнопка с длинным названием #2</div>
+                  <div class="tabs__tab">Кнопка #3</div>
+                </div>
+                <div class="tabs__item-body tabs__item-body_active">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem delectus exercitationem velit maxime minus fugiat dolorum necessitatibus recusandae molestiae reprehenderit, hic et voluptatibus, iste odit reiciendis repellat ut libero temporibus.</div>
+                </div>
+                <div class="tabs__item-body">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="tabs__item-body">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem delectus exercitationem velit maxime minus fugiat dolorum necessitatibus recusandae molestiae reprehenderit, hic et voluptatibus, iste odit reiciendis repellat ut libero temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-section__box tabs-section__box_tabs tabs-section__box_tabs-vertical">
+              <div class="tabs-section__title title title_less">
+                <h3 class="_an-i _nra _an-up">Вертикальные табы </h3>
+              </div>
+              <div class="tabs-section__tabs tabs tabs_vertical">
+                <!--tab-->
+                <div class="tabs__tab-road">
+                  <div class="tabs__tab tabs__tab_active">Кнопка #1</div>
+                  <div class="tabs__tab">Кнопка с длинным названием #2</div>
+                  <div class="tabs__tab">Кнопка #3</div>
+                </div>
+                <div class="tabs__item-body tabs__item-body_active">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem delectus exercitationem velit maxime minus fugiat dolorum necessitatibus recusandae molestiae reprehenderit, hic et voluptatibus, iste odit reiciendis repellat ut libero temporibus.</div>
+                </div>
+                <div class="tabs__item-body">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="tabs__item-body">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem delectus exercitationem velit maxime minus fugiat dolorum necessitatibus recusandae molestiae reprehenderit, hic et voluptatibus, iste odit reiciendis repellat ut libero temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-section__box tabs-section__box_tabs tabs-section__box_tabs-spoiler">
+              <div class="tabs-section__title title title_less">
+                <h3 class="_an-i _nra _an-up">Спойлер-табы </h3>
+              </div>
+              <div class="tabs-section__tabs tabs tabs_spoiler">
+                <!--tab-->
+                <div class="tabs__tab tabs__tab_active">Кнопка #1</div>
+                <div class="tabs__item-body tabs__item-body_active">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem delectus exercitationem velit maxime minus fugiat dolorum necessitatibus recusandae molestiae reprehenderit, hic et voluptatibus, iste odit reiciendis repellat ut libero temporibus.</div>
+                </div>
+                <div class="tabs__tab">Кнопка с длинным названием #2</div>
+                <div class="tabs__item-body">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="tabs__tab">Кнопка #3</div>
+                <div class="tabs__item-body">
+                  <div class="tabs__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem delectus exercitationem velit maxime minus fugiat dolorum necessitatibus recusandae molestiae reprehenderit, hic et voluptatibus, iste odit reiciendis repellat ut libero temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-section">
+        <div class="gallery-section__container container">
+          <div class="gallery-section__inner inner">
+            <div class="gallery-section__title title">
+              <h2 class="_an-i _nra _an-up">Галерея</h2>
+            </div>
+            <div class="gallery-section__box gallery-section__box_gallery">
+              <div class="gallery-section__gallery gallery"><a class="gallery__link" data-fslightbox href="./img/photo1.jpg"><img src="./img/photo1.jpg" alt="photo"></a><a class="gallery__link" data-fslightbox href="./img/photo2.jpg"><img src="./img/photo2.jpg" alt="photo"></a><a class="gallery__link" data-fslightbox href="./img/photo3.jpg"><img src="./img/photo3.jpg" alt="photo"></a><a class="gallery__link" data-fslightbox href="./img/photo4.jpg"><img src="./img/photo4.jpg" alt="photo"></a><a class="gallery__link" data-fslightbox href="./img/photo5.jpg"><img src="./img/photo5.jpg" alt="photo"></a><a class="gallery__link" data-fslightbox href="./img/photo6.jpg"><img src="./img/photo6.jpg" alt="photo"></a><a class="gallery__link" data-fslightbox href="./img/photo7.jpg"><img src="./img/photo7.jpg" alt="photo"></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-section__container container">
+          <div class="form-section__inner inner">
+            <div class="form-section__title title">
+              <h2 class="_an-i _nra _an-up">Форма</h2>
+            </div>
+            <div class="form-section__box form-section__box_form">
+              <form class="form-section__form form js_form-to-email">
+                <div class="form__header title title_less">
+                  <h2 class="_an-i _nra _an-up">Форма отправки данных на email</h2>
+                </div>
+                <div class="form__body">
+                  <input class="form__utm js_source" type="text" name="utm-source">
+                  <input class="form__utm js_medium" type="text" name="utm-medium">
+                  <input class="form__utm js_campaign" type="text" name="utm-campaign">
+                  <input class="form__locker js_locker" type="text">
+                  <div class="form__input form__input_name input">
+                    <input class="input__body js_req" type="text" name="name" placeholder=" ">
+                    <div class="input__placeholder">Имя*</div>
+                  </div>
+                  <div class="form__input form__input_mail input">
+                    <input class="input__body js_req js_email" type="text" name="email" placeholder=" ">
+                    <div class="input__placeholder">E-mail*</div>
+                  </div>
+                  <div class="form__input form__input_phone input">
+                    <input class="input__body" type="text" name="telephone" placeholder=" ">
+                    <div class="input__placeholder">Телефон</div>
+                  </div>
+                  <div class="form__select">
+                    <div class="form__prompt">Выбирите нечто важное*</div>
+                    <select class="form__selecter js_req selecter" name="select">
+                      <option value="">Выбирите строку</option>
+                      <option value="Выбор #1"></option>
+                      <option value="Выбор совсем-совсем длинный до безумия #2"></option>
+                      <option value="Выбор #3"></option>
+                      <option value="Выбор #4"></option>
+                      <option value="Выбор #5"></option>
+                      <option value="Выбор #6"></option>
+                      <option value="Выбор #7"></option>
+                      <option value="Выбор #8"></option>
+                    </select>
+                  </div>
+                  <div class="form__file-stiller file-stiller">
+                    <div class="file-stiller__button">Выбрать файл*</div>
+                    <div class="file-stiller__picture-wrapper"></div>
+                    <input class="file-stiller__input js_req" type="file" name="picture">
+                  </div>
+                  <label class="form__checkbox checkbox">
+                    <input class="js_req" type="checkbox"><span class="checkbox__fake"></span>Соглашение с чем-то*
+                  </label>
+                  <button class="form__submit">Отправить данные</button>
+                </div>
+              </form>
+            </div>
+            <div class="form-section__box form-section__box_form">
+              <form class="form-section__form form js_form-to-file">
+                <div class="form__header title title_less">
+                  <h2 class="_an-i _nra _an-up">Форма отправки данных в файл</h2>
+                </div>
+                <div class="form__body">
+                  <input class="form__utm js_source" type="text" name="utm-source">
+                  <input class="form__utm js_medium" type="text" name="utm-medium">
+                  <input class="form__utm js_campaign" type="text" name="utm-campaign">
+                  <input class="form__locker js_locker" type="text">
+                  <div class="form__input form__input_name input">
+                    <input class="input__body js_req" type="text" name="name" placeholder=" ">
+                    <div class="input__placeholder">Имя*</div>
+                  </div>
+                  <div class="form__input form__input_mail input">
+                    <input class="input__body js_req js_email" type="text" name="email" placeholder=" ">
+                    <div class="input__placeholder">E-mail*</div>
+                  </div>
+                  <div class="form__input form__input_phone input">
+                    <input class="input__body" type="text" name="telephone" placeholder=" ">
+                    <div class="input__placeholder">Телефон</div>
+                  </div>
+                  <label class="form__checkbox checkbox">
+                    <input class="js_req" type="checkbox"><span class="checkbox__fake"></span>Соглашение с чем-то*
+                  </label>
+                  <button class="form__submit">Отправить данные</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="full-section">
+        <div class="full-section__container full-section__container_full container">
+          <div class="full-section__inner inner">
+            <div class="full-section__title title">
+              <h2 class="_an-i _nra _an-up">Шире некуда</h2>
+            </div>
+            <div class="full-section__box full-section__box_full">
+              <div class="full-section__full parallax">
+                <div class="parallax__text-box"><span class="parallax__text" data-mt="2.75" style="--fs: 0.93">SPACE</span><span class="parallax__text" data-mt="2.5" style="--fs: 0.94">SPACE</span><span class="parallax__text" data-mt="2.25" style="--fs: 0.95">SPACE</span><span class="parallax__text" data-mt="2" style="--fs: 0.96">SPACE</span><span class="parallax__text" data-mt="1.75" style="--fs: 0.97">SPACE</span><span class="parallax__text" data-mt="1.5" style="--fs: 0.98">SPACE</span><span class="parallax__text" data-mt="1.25" style="--fs: 0.99">SPACE</span><span class="parallax__text" data-mt="1" style="--fs: 1">SPACE</span></div>
+                <div class="parallax__star-box">
+                  <div class="parallax__star" style="--shine:.2;--x: 40%; --y: 18%; --str:1; --sz:1"></div>
+                  <div class="parallax__star" style="--shine:.3;--x: 78%; --y: 94%; --str:1; --sz:1"></div>
+                  <div class="parallax__star" style="--shine:.8;--x: 78%; --y: 4%; --str:.8; --sz:.8"></div>
+                  <div class="parallax__star" style="--shine:.9;--x: 31%; --y: 65%; --str:.8; --sz:.8"></div>
+                  <div class="parallax__star" style="--shine:.4;--x: 10%; --y: 32%; --str:.8; --sz:.8"></div>
+                  <div class="parallax__star" style="--shine:.3;--x: 18%; --y: 45%; --str:.6; --sz:.6"></div>
+                  <div class="parallax__star" style="--shine:.5;--x: 94%; --y: 38%; --str:.6; --sz:.6"></div>
+                  <div class="parallax__star" style="--shine:.7;--x: 2%; --y: 11%; --str:.6; --sz:.6"></div>
+                  <div class="parallax__star" style="--shine:.9;--x: 15%; --y: 69%; --str:.6; --sz:.6"></div>
+                  <div class="parallax__star" style="--shine:.1;--x: 20%; --y: 30%; --str:.4; --sz:.4"></div>
+                  <div class="parallax__star" style="--shine:.4;--x: 49%; --y: 74%; --str:.4; --sz:.4"></div>
+                  <div class="parallax__star" style="--shine:.5;--x: 11%; --y: 94%; --str:.4; --sz:.4"></div>
+                  <div class="parallax__star" style="--shine:.9;--x: 66%; --y: 14%; --str:.4; --sz:.4"></div>
+                  <div class="parallax__star" style="--shine:.6;--x: 78%; --y: 18%; --str:.4; --sz:.4"></div>
+                  <div class="parallax__star" style="--shine:.6;--x: 24%; --y: 66%; --str:.2; --sz:.2"></div>
+                  <div class="parallax__star" style="--shine:.7;--x: 83%; --y: 79%; --str:.2; --sz:.2"></div>
+                  <div class="parallax__star" style="--shine:.3;--x: 60%; --y: 44%; --str:.2; --sz:.2"></div>
+                  <div class="parallax__star" style="--shine:.4;--x: 20%; --y: 32%; --str:.2; --sz:.2"></div>
+                  <div class="parallax__star" style="--shine:.8;--x: 80%; --y: 46%; --str:.2; --sz:.2"></div>
+                  <div class="parallax__star" style="--shine:.9;--x: 94%; --y: 34%; --str:.2; --sz:.2"></div>
+                  <div class="parallax__star" style="--shine:.1;--x: 52%; --y: 97%; --str:.2; --sz:.2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="full-section__box full-section__box_full">
+              <div class="full-section__full scroll-parallax">
+                <div class="scroll-parallax__item scroll-parallax__item_1"></div>
+                <div class="scroll-parallax__item scroll-parallax__item_2"></div>
+                <div class="scroll-parallax__item scroll-parallax__item_3"></div>
+                <div class="scroll-parallax__item scroll-parallax__item_4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="checks-section">
+        <div class="checks-section__container container">
+          <div class="checks-section__inner inner">
+            <div class="checks-section__title title">
+              <h2 class="_an-i _nra _an-up">Чексы</h2>
+            </div>
+            <div class="checks-section__box checks-section__box_stairs">
+              <div class="checks-section__stairs stairs">
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="1" style="--lvl:1">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Выбрать всё
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="2" style="--lvl:2">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Друг друга
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="2" style="--lvl:2">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Друг папы
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="2" style="--lvl:2">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Папа
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="3" style="--lvl:3">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Дочка
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="3" style="--lvl:3">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Сын
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="4" style="--lvl:4">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Внучка
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="4" style="--lvl:4">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Жучка
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="3" style="--lvl:3">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Приёмыш
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="4" style="--lvl:4">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Внук
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="4" style="--lvl:4">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Барсук
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="2" style="--lvl:2">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Генеральный ларька
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="3" style="--lvl:3">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Директор по закупкам
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="3" style="--lvl:3">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Директор по продажам
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="4" style="--lvl:4">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Начальник по продажам
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="5" style="--lvl:5">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Продавец-консультант
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="5" style="--lvl:5">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Кассир
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="5" style="--lvl:5">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Уборщица
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="6" style="--lvl:6">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Плюшевый мишка
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="4" style="--lvl:4">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Начальник по возвратам
+                </label>
+                <label class="stairs__lvl checkbox _an-i _nra _an-up" data-lvl="2" style="--lvl:2">
+                  <input type="checkbox"><span class="checkbox__fake"></span>Кто-то ещё
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-section">
+        <div class="video-section__container container">
+          <div class="video-section__inner inner">
+            <div class="video-section__title title">
+              <h2 class="_an-i _nra _an-up">Видео</h2>
+            </div>
+            <div class="video-section__box video-section__box_video">
+              <div class="video-section__video video video_stop">
+                <video class="video__field">
+                  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
+                </video>
+                <div class="video__face"></div>
+                <div class="video__panel">
+                  <div class="video__playpause"></div>
+                  <div class="video__stop"></div>
+                  <div class="video__progress">
+                    <div class="video__progress-line"></div>
+                    <div class="video__target-line"></div>
+                  </div>
+                  <div class="video__volume"></div>
+                </div>
+              </div>
+            </div>
+            <div class="video-section__box video-section__box_video">
+              <div class="video-section__video video video_stop">
+                <video class="video__field">
+                  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
+                </video>
+                <div class="video__face"></div>
+                <div class="video__panel">
+                  <div class="video__playpause"></div>
+                  <div class="video__stop"></div>
+                  <div class="video__progress">
+                    <div class="video__progress-line"></div>
+                    <div class="video__target-line"></div>
+                  </div>
+                  <div class="video__volume"></div>
+                </div>
+              </div>
+            </div>
+            <div class="video-section__box video-section__box_video">
+              <div class="video-section__video video-yt">
+                <div class="video-yt__field" data-video="_DYAnU3H7RI"></div>
+                <div class="video-yt__face"></div>
+              </div>
+            </div>
+            <div class="video-section__box video-section__box_video">
+              <div class="video-section__video video-yt">
+                <div class="video-yt__field" data-video="M7lc1UVf-VE"></div>
+                <div class="video-yt__face"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tilt-section">
+        <div class="tilt-section__container tilt-section__container_tilt container">
+          <div class="tilt-section__inner inner">
+            <div class="tilt-section__title title">
+              <h2 class="_an-i _nra _an-up">Наклоны</h2>
+            </div>
+            <div class="tilt-section__box tilt-section__box_tilt">
+              <div class="tilt-section__tilt tilt">
+                <div class="card">
+                  <div class="card__ghost" style="--d: 0s"></div>
+                  <div class="card__ghost" style="--d: -1.4s"></div>
+                  <div class="card__ghost" style="--d: -3.3s"></div>
+                  <div class="card__ghost" style="--d: -5.7s"></div>
+                  <div class="card__ghost" style="--d: -9.1s"></div>
+                  <div class="card__body"><img class="card__img" src="./img/helen.jpg" alt="helen"><a class="card__link" data-fslightbox="second-lightbox" href="./img/helen.jpg"></a>
+                    <div class="card__info"><span class="card__text card__text_name"><span>Елена Пантелеймонова</span></span><span class="card__text"><span>совладелец интернет-портала</span></span><span class="card__text card__text_phone"><a href="phone:79850758956">телефон: +7 (985) 075-89-56</a></span><span class="card__text card__text_email"><a href="tomail:artist-pilot@berry.love">почта: artist-pilot@berry.love</a></span><span class="card__text card__text_quote"><span>"Ты давно меня полюбил. А вчера, я почувствовала как полюбила тебя."</span></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button class="move-up"></button>
+    <!--popup-name-->
+    <div class="popup" id="popup-name">
+      <div class="popup__body">
+        <div class="popup__content"><a class="popup__close" href="#"></a>
+          <div class="popup__title title">
+            <h3>Заголовок окна</h3>
+          </div>
+          <div class="popup__text">обычный текст</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__conteiner container">
+        <div class="footer__inner inner"><a class="footer__logo" href="#"><img class="footer__logo-img" src="./img/logo.png" alt="logo"></a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li><a href="#">Основные элементы</a></li>
+              <li><a href="#">Слайдер</a></li>
+              <li><a href="#">Табы</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Форма</a></li>
+              <li><a href="#">Чекпоинты</a></li>
+            </ul>
+          </nav>
+          <div class="footer__widgets-box footer__widgets-box_contacts">
+            <div class="footer__contacts">
+              <div class="footer__contacts-header">Контакты</div><a class="footer__phone" href="phone:79991234567">телефон +7(999) 123-45-67</a><a class="footer__email" href="mailto:mymail@site.host">почта mymail@site.host</a>
+            </div>
+          </div>
+          <div class="footer__widgets-box footer__widgets-box_address">
+            <div class="footer__address">
+              <div class="footer__address-header">Адрес</div><span class="footer__address-filler">МО, г. Сергиев Посад, ул. Кирова, д. 9а</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/video-yt.js"></script>
+  </body>
+</html>

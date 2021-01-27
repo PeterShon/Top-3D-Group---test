@@ -1,0 +1,13 @@
+.stairs {
+  display: flex;
+  flex-direction: column;
+  &__lvl {
+    margin-left: calc(26px * var(--lvl));
+    margin-top: 10px;
+    &[data-lvl='1'] {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

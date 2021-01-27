@@ -1,0 +1,71 @@
+@import "../local_modules/normalize.css/normalize";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+    /* custom scrollbar FF */
+    scrollbar-color: $black $white;
+    scrollbar-width: thin;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    /* first font */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.219;
+    &.lock {
+      overflow: hidden;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* custom scrollbar webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: $white;
+  border-left: $black;
+  box-shadow: inset 1px 0 0 0px $black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $black;
+}
+
+::selection {
+  background: $black;
+  color: $white;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0px solid #000;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 50px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

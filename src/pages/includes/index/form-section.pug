@@ -1,0 +1,67 @@
+section.form-section
+  .form-section__container.container
+    .form-section__inner.inner
+      .form-section__title.title
+        h2._an-i._nra._an-up Форма
+      .form-section__box.form-section__box_form
+        form.form-section__form.form.js_form-to-email
+          .form__header.title.title_less
+            h2._an-i._nra._an-up Форма отправки данных на email
+          .form__body
+            input.form__utm.js_source(type="text" name='utm-source')
+            input.form__utm.js_medium(type="text" name='utm-medium')
+            input.form__utm.js_campaign(type="text" name='utm-campaign')
+            input.form__locker.js_locker(type="text")
+            .form__input.form__input_name.input
+              input.input__body.js_req(type="text" name='name' placeholder = ' ')
+              .input__placeholder Имя*
+            .form__input.form__input_mail.input
+              input.input__body.js_req.js_email(type="text" name='email' placeholder = ' ')
+              .input__placeholder E-mail*
+            .form__input.form__input_phone.input
+              input.input__body(type="text" name='telephone' placeholder = ' ')
+              .input__placeholder Телефон
+            .form__select
+              .form__prompt Выбирите нечто важное*
+              select.form__selecter.js_req.selecter(name="select")
+                option(value="") Выбирите строку
+                option(value="Выбор #1")
+                option(value="Выбор совсем-совсем длинный до безумия #2")
+                option(value="Выбор #3")
+                option(value="Выбор #4")
+                option(value="Выбор #5")
+                option(value="Выбор #6")
+                option(value="Выбор #7")
+                option(value="Выбор #8")
+            .form__file-stiller.file-stiller
+              .file-stiller__button Выбрать файл*
+              .file-stiller__picture-wrapper
+              input.file-stiller__input.js_req(type='file' name='picture')
+            label.form__checkbox.checkbox
+              input.js_req(type="checkbox")
+              span.checkbox__fake
+              | Соглашение с чем-то*
+            button.form__submit Отправить данные
+      .form-section__box.form-section__box_form
+        form.form-section__form.form.js_form-to-file
+          .form__header.title.title_less
+            h2._an-i._nra._an-up Форма отправки данных в файл
+          .form__body
+            input.form__utm.js_source(type="text" name='utm-source')
+            input.form__utm.js_medium(type="text" name='utm-medium')
+            input.form__utm.js_campaign(type="text" name='utm-campaign')
+            input.form__locker.js_locker(type="text")
+            .form__input.form__input_name.input
+              input.input__body.js_req(type="text" name='name' placeholder = ' ')
+              .input__placeholder Имя*
+            .form__input.form__input_mail.input
+              input.input__body.js_req.js_email(type="text" name='email' placeholder = ' ')
+              .input__placeholder E-mail*
+            .form__input.form__input_phone.input
+              input.input__body(type="text" name='telephone' placeholder = ' ')
+              .input__placeholder Телефон
+            label.form__checkbox.checkbox
+              input.js_req(type="checkbox")
+              span.checkbox__fake
+              | Соглашение с чем-то*
+            button.form__submit Отправить данные

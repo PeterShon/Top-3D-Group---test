@@ -1,0 +1,34 @@
+section.main-elements
+  .main-elements__container.container
+    .main-elements__inner.inner
+      .main-elements__title.title
+        h2._an-i._nra._an-up Основные элементы
+      .main-elements__box.main-elements__box_button
+        a.main-elements__button.button.js_popup-link(href="#popup-name") Кнопка вызывающая окно
+      .main-elements__box.main-elements__box_checkbox
+        label.main-elements__checkbox.checkbox
+          input(type="checkbox")
+          span.checkbox__fake
+          | этот чекбокс имеет кликабельный текст
+      .main-elements__box.main-elements__box_breadcrumbs
+        ul.main-elements__breadcrumbs.breadcrumbs
+          - var links = [['#', 'крошка #1'], ['#', 'крошка #2'], ['#', 'крошка #3'], ['#', 'крошка #4'], ['#', 'крошка #5'], ['#', 'Корочка']]
+          each val, index in links
+            li
+              a(href = val[0])= val[1]
+      .main-elements__box.main-elements__box_input
+        .main-elements__input.input
+          input.input__body(type="text" placeholder=' ')
+          .input__placeholder Текст-подсказка
+      .main-elements__box.main-elements__box_select
+        select#main-elements__select.main-elements__select.selecter(name="select")
+          option(value="") Выбирите строку
+          option(value="Если")
+          option(value="Много")
+          option(value="Нажимать")
+          option(value="Можно")
+          option(value="Мой")
+          option(value="Пароль")
+          option(value="Взломать")
+      .main-elements__box.main-elements__box_jquery
+        .main-elements__jquery.jquery

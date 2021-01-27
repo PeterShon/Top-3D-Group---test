@@ -1,0 +1,20 @@
+footer.footer
+  .footer__conteiner.container
+    .footer__inner.inner
+      a.footer__logo(href="#")
+        img.footer__logo-img(src="./img/logo.png", alt="logo")
+      nav.footer__nav
+        ul.footer__nav-list
+          - var links = [['#', 'Основные элементы'], ['#', 'Слайдер'], ['#', 'Табы'], ['#', 'Галерея'], ['#', 'Форма'], ['#', 'Чекпоинты']]
+          each val, index in links
+            li
+              a(href = val[0])= val[1]
+      .footer__widgets-box.footer__widgets-box_contacts
+        .footer__contacts
+          .footer__contacts-header Контакты
+          a.footer__phone(href="phone:79991234567") телефон +7(999) 123-45-67
+          a.footer__email(href="mailto:mymail@site.host") почта mymail@site.host
+      .footer__widgets-box.footer__widgets-box_address
+        .footer__address
+          .footer__address-header Адрес
+          span.footer__address-filler МО, г. Сергиев Посад, ул. Кирова, д. 9а

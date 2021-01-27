@@ -1,0 +1,10 @@
+//up
+._an-i._an-up {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s;
+  &._a {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

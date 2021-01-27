@@ -1,0 +1,37 @@
+header.header.js_lock-padding
+  .header__container.container
+    .header__inner.inner
+      a.header__logo(href="#/?utm_source=istochnik&utm_medium=organic&utm_campaign=test_of_utm")
+        img.header__logo-img(src="./img/logo.png", alt="logo")
+      nav.header__nav
+        ul.header__nav-list
+          li.header__dropdown.dropdown
+            button.dropdown__btn Меню
+            .dropdown__body
+              ul.dropdown__list
+                - var links = [['#', 'Основные элементы'], ['#', 'Слайдер'], ['#', 'Табы'], ['#', 'Галерея'], ['#', 'Форма'], ['#', 'Чекпоинты']]
+                each val, index in links
+                  li
+                    a(href = val[0])= val[1]
+          - var links = [['#', 'Пункт 1'], ['#', 'Пункт 2'], ['#', 'Пункт 3'], ['#', 'Пункт 4'], ['#', 'Пункт 5']]
+          each val, index in links
+            li
+              a(href = val[0])= val[1]
+      .header__widgets
+        .header__widgets-box.header__widgets-box_first
+          .header__widget1
+          .header__burger.burger
+            .burger__button-wrapper
+              .burger__button
+                .burger__button-el.burger__button-el_top
+                .burger__button-el.burger__button-el_middle
+                .burger__button-el.burger__button-el_bottom
+            .burger__body
+              .burger__container.container
+                .burger__inner.inner
+                  nav.burger__nav
+                    ul.burger__nav-list
+                      - var links = [['#', 'Основные элементы'], ['#', 'Слайдер'], ['#', 'Табы'], ['#', 'Галерея'], ['#', 'Форма'], ['#', 'Чекпоинты']]
+                      each val, index in links
+                        li
+                          a(href = val[0])= val[1]

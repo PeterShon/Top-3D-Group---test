@@ -1,0 +1,65 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  &__wrapper {
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: lightgrey;
+    &_green {background-color: lightgreen; height: 100px;}
+    &_pink {background-color: pink; height: 150px;}
+    &_orange {background-color: orange; height: 250px;}
+    &_blue {background-color: lightblue; height: 200px;}
+  }
+  &__navigation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+  &__pagination-bullet {
+    display: block;
+    width: 20px; height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    margin: 0 10px;
+    cursor: pointer;
+    &_active {
+      transform: scaleY(1.5);
+      background-color: black;
+    }
+  }
+  &__button {
+    position: relative;
+    width: 60px;
+    height: 10px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    &:after {
+      content: '';
+      width: 10px; height: 10px;
+      background-color: black;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &_prev {
+      &:hover {transform: translateX(-5px);}
+      &:after {left: -5px;}
+    }
+    &_next {
+      &:hover {transform: translateX(5px);}
+      &:after {right: -5px;}
+    }
+  }
+  &__scrollbar {}
+}
