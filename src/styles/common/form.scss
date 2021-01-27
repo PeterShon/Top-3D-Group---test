@@ -33,17 +33,18 @@
     padding: 20px;
     grid-column: span 2;
 
-    background-color: rgb(255, 252, 96);
-    border: 5px solid rgb(111, 0, 255);
+    background-color: #D2001C;
+    border: 5px solid #D2001C;
     border-radius: 5px;
     cursor: pointer;
     
+    color: white;
     font-size: 18px;
 
     transition: 0.3s;
     &:hover {
-      background-color: rgb(255, 253, 148);
-      border: 5px solid rgb(197, 153, 255);
+      background-color: #ff0022;
+      border: 5px solid #ff0022;
     }
   }
 }

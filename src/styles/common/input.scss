@@ -11,7 +11,7 @@
 
     transition: 0.3s;
     &:focus, &:-webkit-autofill:focus {
-      border-bottom: 1px solid blue;
+      border-bottom: 1px solid #8d7800;
     }
     &.js_error,
     &:-webkit-autofill:focus.js_error,

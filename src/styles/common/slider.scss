@@ -7,59 +7,51 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    background-color: lightgrey;
-    &_green {background-color: lightgreen; height: 100px;}
-    &_pink {background-color: pink; height: 150px;}
-    &_orange {background-color: orange; height: 250px;}
-    &_blue {background-color: lightblue; height: 200px;}
+  }
+  &__item-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    &.swiper-slide  {
+      height: auto;
+    }
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   &__navigation-box {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin-top: 20px;
-  }
-  &__pagination {
-    display: flex;
-    justify-content: center;
-  }
-  &__pagination-bullet {
-    display: block;
-    width: 20px; height: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
-    margin: 0 10px;
-    cursor: pointer;
-    &_active {
-      transform: scaleY(1.5);
-      background-color: black;
-    }
   }
   &__button {
     position: relative;
-    width: 60px;
-    height: 10px;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 39px;
+    border: 1px solid #E5E5E5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    &:hover {
+      background-color: #FED600;
+    }
     &:after {
       content: '';
-      width: 10px; height: 10px;
-      background-color: black;
+      width: 12px; height: 19px;
+      background: url(../img/arrow-slider_prev.svg) center/contain no-repeat;
       position: absolute;
-      transform: rotate(45deg);
     }
     &_prev {
-      &:hover {transform: translateX(-5px);}
-      &:after {left: -5px;}
+
     }
     &_next {
-      &:hover {transform: translateX(5px);}
-      &:after {right: -5px;}
+      transform: rotate(180deg) translateX(1px);
     }
   }
-  &__scrollbar {}
 }

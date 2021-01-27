@@ -6,7 +6,7 @@ export function header() {
   lvlScroll()
 
   function lvlScroll() {
-    if (document.documentElement.clientWidth * 0.1 > window.pageYOffset) {
+    if (document.documentElement.clientWidth * 0.05 > window.pageYOffset) {
       header.classList.remove('header_onscroll')
     } else {
       header.classList.add('header_onscroll')

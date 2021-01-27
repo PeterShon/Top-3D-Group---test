@@ -36,7 +36,7 @@
     grid-template-columns: repeat(12, 1fr);
 
     position: relative;
-    background-color: #ffffff;
+    background-color: #FED600;
     color: #000000;
     max-width: 1545px;
     padding: 60px 50px 40px;
@@ -70,9 +70,8 @@
   }
   &__title {
     grid-column: 1/-1;
-    width: 320px;
   }
-  &__text {
+  &__form {
     grid-column: 1/-1;
   }
 }

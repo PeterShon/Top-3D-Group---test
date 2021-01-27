@@ -1,5 +1,3 @@
-import $ from '../local_modules/jquery/dist/jquery.min'
-import { myJquery } from '../js/my-jquery.js'
 import { moveUp } from '../js/move-up.js'
 import { popups } from '../js/popups.js'
 import { parallax } from '../js/parallax.js'
@@ -19,10 +17,6 @@ require(`../local_modules/choices.js/public/assets/scripts/choices.min`)
 require(`../local_modules/rellax/rellax.min`)
 require(`../local_modules/vanilla-tilt/dist/vanilla-tilt.min`)
 
-$(document).ready(() => {
-  myJquery()
-  // eslint-disable-next-line no-console
-})
 document.addEventListener(`DOMContentLoaded`, start())
 
 function start() {

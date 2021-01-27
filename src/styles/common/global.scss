@@ -10,13 +10,14 @@ html {
     min-height: 100%;
     box-sizing: border-box;
     /* custom scrollbar FF */
-    scrollbar-color: $black $white;
+    scrollbar-color:#FED600 $white;
     scrollbar-width: thin;
 }
 
 body {
     position: relative;
-    margin: 0;
+    margin: 12px 0 105px;
+
     /* first font */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -43,10 +44,10 @@ a {
 ::-webkit-scrollbar-track {
   background-color: $white;
   border-left: $black;
-  box-shadow: inset 1px 0 0 0px $black;
+  box-shadow: inset 1px 0 0 0px #ffed87;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $black;
+  background-color: #FED600;
 }
 
 ::selection {

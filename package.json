@@ -69,7 +69,6 @@
   "dependencies": {
     "choices.js": "^9.0.1",
     "fslightbox": "^3.2.3",
-    "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "rellax": "^1.12.1",
     "swiper": "^6.4.5",

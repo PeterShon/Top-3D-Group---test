@@ -1,8 +1,36 @@
-//popup-name
-#popup-name.popup
+//popup-resume
+#popup-resume.popup
   .popup__body
     .popup__content
       a.popup__close(href="#")
       .popup__title.title
-        h3 Заголовок окна
-      .popup__text обычный текст
+        h3 Форма отправки резюме
+      form.popup__form.form.js_form-to-email
+          .form__body
+            input.form__utm.js_source(type="text" name='utm-source')
+            input.form__utm.js_medium(type="text" name='utm-medium')
+            input.form__utm.js_campaign(type="text" name='utm-campaign')
+            input.form__locker.js_locker(type="text")
+            .form__input.form__input_name.input
+              input.input__body.js_req(type="text" name='name' placeholder = ' ')
+              .input__placeholder Имя*
+            .form__input.form__input_mail.input
+              input.input__body.js_req.js_email(type="text" name='email' placeholder = ' ')
+              .input__placeholder E-mail*
+            .form__input.form__input_phone.input
+              input.input__body(type="text" name='telephone' placeholder = ' ')
+              .input__placeholder Телефон
+            .form__select
+              .form__prompt Выбирите должность*
+              select.form__selecter.js_req.selecter(name="select")
+                option(value="") Поле выбора
+                option(value="Джун")
+            .form__file-stiller.file-stiller
+              .file-stiller__button Прикрепите резюме*
+              .file-stiller__picture-wrapper
+              input.file-stiller__input.js_req(type='file' name='picture')
+            label.form__checkbox.checkbox
+              input.js_req(type="checkbox")
+              span.checkbox__fake
+              | Я прикрепил резюме*
+            button.form__submit Отправить данные

@@ -6,21 +6,15 @@ export function slider() {
   var slider = new Swiper('.slider', {
     // Optional parameters
     loop: true, //бесконечные слайды
-    slidesPerView: 3, //слайдов к показу
-    spaceBetween: 30, //расстояние между слайдами
+    slidesPerView: 2, //слайдов к показу
+    spaceBetween: 67, //расстояние между слайдами
     slidesPerGroup: 1, //количество слайдов на свайп (соблюдать целочисленное деление perView/perGroup)
     shortSwipes: false, //включение/отключение функции короткого свайпа
     longSwipesMs: 70, //длительность длинного свайпа в МС
-    // If we need pagination
-    pagination: {
-      el: '.slider__pagination',
-      type: 'bullets', // Can be "bullets", "fraction", "progressbar" or "custom"
-      clickable: 'true',
-
-      bulletClass: 'slider__pagination-bullet',
-      bulletActiveClass: 'slider__pagination-bullet_active',
+    allowTouchMove: false, //без свайпов
+    autoplay: {
+      delay: 5000,
     },
-
     // Navigation arrows
     navigation: {
       nextEl: '.slider__button_next',
