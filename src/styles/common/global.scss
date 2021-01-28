@@ -27,6 +27,10 @@ body {
     &.lock {
       overflow: hidden;
     }
+
+    @include media-tablet-horizontal {
+      margin: 12px 0 50px;
+    }
 }
 
 img {

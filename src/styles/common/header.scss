@@ -7,6 +7,8 @@
   top: 0;
   width: 100%;
   padding: 12px 0 0;
+
+  background-color: white;
   &__container {
     height: 100%;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
@@ -342,7 +344,7 @@
     font-size: 13px;
     line-height: 1.36em;
     @include media-tablet-horizontal {
-      min-width: 390px;
+      min-width: 400px;
     }
     @include media-tablet {
       display: none;

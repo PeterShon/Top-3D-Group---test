@@ -1,3 +1,9 @@
 .main {
   margin-top: 251px;
+  @include media-laptop {
+    margin-top: 230px;
+  }
+  @include media-tablet {
+    margin-top: 180px;
+  }
 }
