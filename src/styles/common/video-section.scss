@@ -1,4 +1,6 @@
 .video-section {
+  display: flex;
+  justify-content: center;
   &__container {
 
   }
@@ -6,20 +8,38 @@
     padding: 70px 136px 59px;
     grid-row-gap: 30px;
     background-color: #f9f9f9;
+    @include media-laptop {
+      max-width: 1300px;
+      padding: 50px 30px 30px;
+      grid-row-gap: 10px;
+    }
+    @include media-mobile {
+      max-width: 1300px;
+      padding: 30px 10px 15px;
+    }
   }
   &__title {
     grid-column: 1/7;
     display: grid;
     width: 100%;
+    @include media-tablet-horizontal {
+      grid-column: 1/9;
+    }
   }
   &__navigation {
     grid-column: 7/-1;
+    @include media-tablet-horizontal {
+      grid-column: 9/-1;
+    }
   }
   &__slider {
     grid-column: 1/-1;
     grid-row: 2/3;
 
     margin-top: 30px;
+    @include media-tablet-horizontal {
+      margin-top: 0px;
+    }
   }
   &__box {
     display: flex;

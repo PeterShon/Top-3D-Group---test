@@ -12,18 +12,33 @@
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 40px 20px;
     align-items: end;
+    @include media-tablet-horizontal {
+      grid-gap: 20px 10px;
+    }
   }
   &__input {
     grid-column: span 2;
+    @include media-tablet-horizontal {
+      grid-column: 1/-1;
+    }
   }
   &__select {
-    grid-column: span 3;
+    @include media-tablet-horizontal {
+      grid-column: 1/-1;
+    }
   }
   &__file-stiller {
-    grid-column: span 3;
+    @include media-tablet-horizontal {
+      grid-column: 1/-1;
+    }
   }
   &__checkbox {
-    grid-column: span 4;
+    @include media-tablet-horizontal {
+      grid-column: 1/-1;
+    }
+    @include media-mobile {
+      font-size: 13px;
+    }
   }
   &__submit {
     display: flex;
@@ -45,6 +60,12 @@
     &:hover {
       background-color: #ff0022;
       border: 5px solid #ff0022;
+    }
+    @include media-tablet-horizontal {
+      padding: 5px 10px;
+    }
+    @include media-tablet-horizontal {
+      grid-column: 1/-1;
     }
   }
 }

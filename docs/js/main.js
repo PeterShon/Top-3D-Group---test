@@ -3671,19 +3671,58 @@ __webpack_require__.r(__webpack_exports__);
 
 function slider() {
   var slider = new _local_modules_swiper_swiper_bundle_esm__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider', {
-    // Optional parameters
-    loop: true,
-    //бесконечные слайды
-    slidesPerView: 2,
-    //слайдов к показу
-    spaceBetween: 70,
-    //расстояние между слайдами
-    slidesPerGroup: 1,
-    //количество слайдов на свайп (соблюдать целочисленное деление perView/perGroup)
-    allowTouchMove: false,
-    //без свайпов
-    autoplay: {
-      delay: 5000
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        // Optional parameters
+        loop: true,
+        //бесконечные слайды
+        slidesPerView: 1,
+        //слайдов к показу
+        spaceBetween: 0,
+        //расстояние между слайдами
+        slidesPerGroup: 1,
+        //количество слайдов на свайп (соблюдать целочисленное деление perView/perGroup)
+        allowTouchMove: false,
+        //без свайпов
+        autoplay: {
+          delay: 5000
+        }
+      },
+      // when window width is >= 768px
+      768: {
+        // Optional parameters
+        loop: true,
+        //бесконечные слайды
+        slidesPerView: 2,
+        //слайдов к показу
+        spaceBetween: 20,
+        //расстояние между слайдами
+        slidesPerGroup: 1,
+        //количество слайдов на свайп (соблюдать целочисленное деление perView/perGroup)
+        allowTouchMove: false,
+        //без свайпов
+        autoplay: {
+          delay: 5000
+        }
+      },
+      // when window width is >= 1024px
+      1024: {
+        // Optional parameters
+        loop: true,
+        //бесконечные слайды
+        slidesPerView: 2,
+        //слайдов к показу
+        spaceBetween: 70,
+        //расстояние между слайдами
+        slidesPerGroup: 1,
+        //количество слайдов на свайп (соблюдать целочисленное деление perView/perGroup)
+        allowTouchMove: false,
+        //без свайпов
+        autoplay: {
+          delay: 5000
+        }
+      }
     },
     // Navigation arrows
     navigation: {

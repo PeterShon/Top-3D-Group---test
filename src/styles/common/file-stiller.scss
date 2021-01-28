@@ -38,6 +38,9 @@
     .file-stiller:hover & {
       background-color: #c2a500;
     }
+    @include media-mobile {
+      display: none;
+    }
   }
   &__picture {
     height: 100%;

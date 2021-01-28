@@ -1281,7 +1281,7 @@ select:-webkit-autofill:focus {
 
 @media (max-width: 767px) {
   .header__inner_widgets {
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 
@@ -1550,6 +1550,7 @@ select:-webkit-autofill:focus {
 @media (max-width: 1024px) {
   .header__logo {
     display: flex;
+    margin-right: 10px;
   }
 }
 
@@ -1608,7 +1609,19 @@ select:-webkit-autofill:focus {
   color: red;
 }
 
+@media (max-width: 1024px) {
+  .header__logo-text {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
+  .header__logo-text {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
   .header__logo-text {
     display: none;
   }
@@ -1649,11 +1662,12 @@ select:-webkit-autofill:focus {
   flex: 1 0 auto;
   display: flex;
   align-items: center;
+  transition: 0.3s;
 }
 
 @media (max-width: 1024px) {
   .header__search {
-    min-width: 400px;
+    min-width: 385px;
   }
 }
 
@@ -1714,6 +1728,12 @@ select:-webkit-autofill:focus {
   transform: translateX(5px);
 }
 
+@media (max-width: 1366px) {
+  .header__enter {
+    margin: 10px;
+  }
+}
+
 @media (max-width: 767px) {
   .header__enter {
     margin: 0;
@@ -1747,6 +1767,12 @@ select:-webkit-autofill:focus {
   transition: 0.3s;
 }
 
+@media (max-width: 1366px) {
+  .header__basket {
+    margin: 10px;
+  }
+}
+
 @media (max-width: 767px) {
   .header__basket {
     margin-left: 10px;
@@ -1761,7 +1787,7 @@ select:-webkit-autofill:focus {
   color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .header__basket span {
     font-size: 0;
     margin-left: 0;
@@ -1865,10 +1891,30 @@ select:-webkit-autofill:focus {
   }
 }
 
+.video-section {
+  display: flex;
+  justify-content: center;
+}
+
 .video-section__inner {
   background: #f9f9f9;
   padding: 70px 136px 59px;
   grid-row-gap: 30px;
+}
+
+@media (max-width: 1366px) {
+  .video-section__inner {
+    max-width: 1300px;
+    padding: 50px 30px 30px;
+    grid-row-gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section__inner {
+    max-width: 1300px;
+    padding: 30px 10px 15px;
+  }
 }
 
 .video-section__title {
@@ -1877,14 +1923,32 @@ select:-webkit-autofill:focus {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  .video-section__title {
+    grid-column: 1/9;
+  }
+}
+
 .video-section__navigation {
   grid-column: 7/-1;
+}
+
+@media (max-width: 1024px) {
+  .video-section__navigation {
+    grid-column: 9/-1;
+  }
 }
 
 .video-section__slider {
   grid-column: 1/-1;
   grid-row: 2/3;
   margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .video-section__slider {
+    margin-top: 0px;
+  }
 }
 
 .video-section__box {
@@ -1905,6 +1969,8 @@ select:-webkit-autofill:focus {
 }
 
 .about-section {
+  display: flex;
+  justify-content: center;
   /* about-section - team */
   /* about-section - feedback */
   /* about-section - about */
@@ -1915,7 +1981,7 @@ select:-webkit-autofill:focus {
 
 .about-section__inner {
   padding: 66.56px 107px 70px;
-  grid-template-rows: auto 50.56px auto 73px auto 50px auto;
+  grid-template-rows: auto 50.56px auto 73px auto 50px auto 40px;
 }
 
 @media (max-width: 1366px) {
@@ -1927,13 +1993,13 @@ select:-webkit-autofill:focus {
 
 @media (max-width: 1024px) {
   .about-section__inner {
-    grid-template-rows: auto 20px auto 40px auto 20px auto;
+    grid-template-rows: auto 20px auto 40px auto 20px auto auto auto 20px;
   }
 }
 
 @media (max-width: 767px) {
   .about-section__inner {
-    grid-template-rows: auto 20px auto 20px auto 30px auto 10px auto;
+    grid-template-rows: auto 20px auto 20px auto 30px auto 10px auto auto auto 20px;
   }
 }
 
@@ -2430,11 +2496,18 @@ select:-webkit-autofill:focus {
 /* burger */
 
 .burger {
+  display: none;
   /*burger - button*/
   /* burger - body */
   /* burger - nav*/
   /* burger - category*/
   /* burger - search*/
+}
+
+@media (max-width: 1366px) {
+  .burger {
+    display: block;
+  }
 }
 
 .burger__button-wrapper {
@@ -2507,6 +2580,7 @@ select:-webkit-autofill:focus {
 .burger__body {
   background: white;
   display: none;
+  justify-content: center;
   position: absolute;
   width: calc(100% - 40px);
   height: 100vh;
@@ -2516,7 +2590,7 @@ select:-webkit-autofill:focus {
 }
 
 .burger_active .burger__body {
-  display: block;
+  display: flex;
   z-index: 9;
 }
 
@@ -2880,6 +2954,12 @@ select:-webkit-autofill:focus {
 .title > * {
   font: normal 400 36px/1.19em 'SFProDisplay', sans-serif;
   margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .title > * {
+    font-size: 30px;
+  }
 }
 
 .checkbox {
@@ -3381,20 +3461,44 @@ input:-webkit-autofill + .input__placeholder {
   align-items: end;
 }
 
+@media (max-width: 1024px) {
+  .form__body {
+    grid-gap: 20px 10px;
+  }
+}
+
 .form__input {
   grid-column: span 2;
 }
 
-.form__select {
-  grid-column: span 3;
+@media (max-width: 1024px) {
+  .form__input {
+    grid-column: 1/-1;
+  }
 }
 
-.form__file-stiller {
-  grid-column: span 3;
+@media (max-width: 1024px) {
+  .form__select {
+    grid-column: 1/-1;
+  }
 }
 
-.form__checkbox {
-  grid-column: span 4;
+@media (max-width: 1024px) {
+  .form__file-stiller {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form__checkbox {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__checkbox {
+    font-size: 13px;
+  }
 }
 
 .form__submit {
@@ -3416,6 +3520,18 @@ input:-webkit-autofill + .input__placeholder {
 .form__submit:hover {
   background: #ff0022;
   border: 5px solid #ff0022;
+}
+
+@media (max-width: 1024px) {
+  .form__submit {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form__submit {
+    grid-column: 1/-1;
+  }
 }
 
 .file-stiller {
@@ -3458,6 +3574,12 @@ input:-webkit-autofill + .input__placeholder {
 
 .file-stiller:hover .file-stiller__picture-wrapper {
   background: #c2a500;
+}
+
+@media (max-width: 480px) {
+  .file-stiller__picture-wrapper {
+    display: none;
+  }
 }
 
 .file-stiller__picture {
@@ -3632,6 +3754,12 @@ input:-webkit-autofill + .input__placeholder {
   transform: perspective(600px) translate(0, -50%) rotateX(5deg);
   opacity: 0;
   transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+  .popup__content {
+    padding: 40px 20px 20px;
+  }
 }
 
 .popup__close {

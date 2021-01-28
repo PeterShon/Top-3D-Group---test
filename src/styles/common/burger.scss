@@ -32,6 +32,10 @@
 
 /* burger */
 .burger {
+  display: none;
+  @include media-laptop {
+    display: block;
+  }
   /*burger - button*/
   &__button-wrapper {
     position: relative;
@@ -86,6 +90,7 @@
   /* burger - body */
   &__body {
     display: none;
+    justify-content: center;
     position: absolute;
     width: calc(100% - 40px);
     height: 100vh;
@@ -94,7 +99,7 @@
     left: 20px;
     background-color: white;
     .burger_active  & {
-      display: block;
+      display: flex;
       z-index: 9;
     }
     @include media-tablet {
