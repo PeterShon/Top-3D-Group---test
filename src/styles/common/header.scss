@@ -209,7 +209,7 @@
     line-height: 1.36em;
     &:hover {
       text-decoration: underline;
-      text-underline-position: below;
+      text-underline-position: under;
     }
     @include media-laptop {
       margin-right: 0;
@@ -224,7 +224,7 @@
     line-height: 1.36em;
     &:hover {
       text-decoration: underline;
-      text-underline-position: below;
+      text-underline-position: under;
     }
     @include media-laptop {
       margin-right: 0;

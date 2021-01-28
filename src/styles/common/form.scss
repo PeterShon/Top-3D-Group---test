@@ -23,16 +23,19 @@
     }
   }
   &__select {
+    grid-column: span 3;
     @include media-tablet-horizontal {
       grid-column: 1/-1;
     }
   }
   &__file-stiller {
+    grid-column: span 3;
     @include media-tablet-horizontal {
       grid-column: 1/-1;
     }
   }
   &__checkbox {
+    grid-column: span 4;
     @include media-tablet-horizontal {
       grid-column: 1/-1;
     }
@@ -63,8 +66,6 @@
     }
     @include media-tablet-horizontal {
       padding: 5px 10px;
-    }
-    @include media-tablet-horizontal {
       grid-column: 1/-1;
     }
   }

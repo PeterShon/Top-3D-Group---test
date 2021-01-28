@@ -1,14 +1,6 @@
-/* burger - vars*/
-* {
-  --burger__button-el--height: 15%;
-  --burger__button-el_bottom--translate: 270%;
-  --burger__button-el_top--translate: -270%;
-  --burger__button-wrapper--padding: 75%;
-}
-
 /* burger - keyframes */
 @keyframes rotate-top-active {
-  0% {transform: translateY(var(--burger__button-el_top--translate)) rotate(0)}
+  0% {transform: translateY(-270%) rotate(0)}
   40% {transform: translateY(0) rotate(0deg)}
   60% {transform: translateY(0) rotate(0deg) scaleY(0.1)}
   100% {transform: translateY(0) rotate(45deg) scaleY(1)}
@@ -16,10 +8,10 @@
 @keyframes rotate-top-unactive {
   0% {transform: translateY(0) rotate(45deg)}
   50% {transform: translateY(0) rotate(0deg)}
-  100% {transform: translateY(var(--burger__button-el_top--translate)) rotate(0)}
+  100% {transform: translateY(-270%) rotate(0)}
 }
 @keyframes rotate-bottom-active {
-  0% {transform: translateY(var(--burger__button-el_bottom--translate)) rotate(0)}
+  0% {transform: translateY(270%) rotate(0)}
   40% {transform: translateY(0) rotate(-0deg)}
   60% {transform: translateY(0) rotate(-0deg) scaleY(0.1)}
   100% {transform: translateY(0) rotate(-45deg) scaleY(1)}
@@ -27,7 +19,7 @@
 @keyframes rotate-bottom-unactive {
   0% {transform: translateY(0) rotate(-45deg)}
   50% {transform: translateY(0) rotate(-0deg)}
-  100% {transform: translateY(var(--burger__button-el_bottom--translate)) rotate(0)}
+  100% {transform: translateY(270%) rotate(0)}
 }
 
 /* burger */
@@ -40,7 +32,7 @@
   &__button-wrapper {
     position: relative;
     width: 40px;
-    padding-top: var(--burger__button-wrapper--padding);
+    padding-top: 75%;
   }
   &__button {
     position: absolute;
@@ -55,10 +47,10 @@
   &__button-el {
     position: absolute;
     width: 100%;
-    height: var(--burger__button-el--height);
+    height: 15%;
     background-color: black;
     &_top {
-      transform: translateY(var(--burger__button-el_top--translate));
+      transform: translateY(-270%);
       .burger_unactive  & {
         animation: rotate-top-unactive .3s ease-out 0s normal forwards;
       }
@@ -69,7 +61,7 @@
     &_middle {
       transition: 0.3s;
       .burger_unactive  & {
-        height: var(--burger__button-el--height);
+        height: 15%;
         opacity: 1;
       }
       .burger_active  & {
@@ -78,7 +70,7 @@
       }
     }
     &_bottom {
-      transform: translateY(var(--burger__button-el_bottom--translate));
+      transform: translateY(270%);
       .burger_unactive  & {
         animation: rotate-bottom-unactive .3s ease-out 0s normal forwards;
       }

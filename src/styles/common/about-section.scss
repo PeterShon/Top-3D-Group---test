@@ -129,7 +129,7 @@
     & a {
       color: #D2001C;
       text-decoration: underline;
-      text-underline-position: below;
+      text-underline-position: under;
     }
     @include media-tablet {
       grid-column: 1 / -1;
