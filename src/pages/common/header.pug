@@ -2,14 +2,17 @@ header.header.js_lock-padding
   .header__container.header__container_top.container
     .header__inner.header__inner_top.inner
       .header__top-line
-        .header__top-box
+        .header__top-box.header__top-box_first
           .header__city
             select#header__city-select.header__city-select.selecter(name="city")
               option(value="Санкт-Петербург")
               option(value="Москва")
           a.header__phone(href="phone:+78126135838") +7 (812) 613-58-38
           span.header__time Пн–пт 10:00–19:00, сб-вс 10:00–17:00
-        .header__top-box
+        a.header__logo.header__logo_top(href="#/?utm_source=istochnik&utm_medium=organic&utm_campaign=test_of_utm")
+          img.header__logo-img(src="./img/logo.svg", alt="logo")
+          span.header__logo-text Ваш эксперт <br> на рынке <span>3D</span>-техники
+        .header__top-box.header__top-box_second
           a.header__email-us(href="#") Напишите нам
           a.header__to-head(href="#") Свяжитесь с директором
           .header__social
@@ -34,6 +37,37 @@ header.header.js_lock-padding
       a.header__basket(href="#")
         img(src="./img/basket.svg", alt="icon")
         span Корзина пуста
+      .header__burger.burger
+        .burger__button-wrapper
+          .burger__button
+            .burger__button-el.burger__button-el_top
+            .burger__button-el.burger__button-el_middle
+            .burger__button-el.burger__button-el_bottom
+        .burger__body
+          .burger__container.container
+            .burger__inner.inner
+              .burger__title.burger__title_nav.title Меню
+              nav.burger__nav.burger__nav_active
+                ul.burger__nav-list
+                  - var links = [['#', 'Акции'], ['#', 'О нас'], ['#', 'Мероприятия'], ['#', 'Оплата и доставка'], ['#', 'Что с моим заказом?'], ['#', 'Гос. закупки  '], ['#', 'Блог'], ['#', 'Мастер-классы'], ['#', 'Контакты']]
+                  each val, index in links
+                    li
+                      a(href = val[0])= val[1]
+              .burger__title.burger__title_category.title Категории
+              nav.burger__category
+                ul.burger__category-list
+                  each val, index in ['3D-принтеры', '3D-сканеры', 'Станки', 'Роботы', 'Образование', 'Стоматологам', 'Гаджеты', 'Материалы', 'ПО', 'Решения', 'Учебный центр', 'Услуги']
+                    li.burger__dropdown.dropdown
+                      button.dropdown__btn= val
+                      .dropdown__body
+                        ul.dropdown__list
+                          - var links = [['#', 'элемент #1'], ['#', 'элемент #2'], ['#', 'элемент #3'], ['#', 'элемент #4']]
+                          each val, index in links
+                            li
+                              a(href = val[0])= val[1]
+              form.burger__search
+                input.burger__search-input(type="text" , placeholder='Введите запрос, например, Formlabs Form 2')
+                button.burger__search-button(type='submit') Найти
     .header__inner.header__inner_nav.inner
       nav.header__nav
         ul.header__nav-list
@@ -41,24 +75,6 @@ header.header.js_lock-padding
           each val, index in links
             li
               a(href = val[0])= val[1]
-      .header__widgets(style='display:none')
-        .header__widgets-box.header__widgets-box_first
-          .header__widget1
-          .header__burger.burger
-            .burger__button-wrapper
-              .burger__button
-                .burger__button-el.burger__button-el_top
-                .burger__button-el.burger__button-el_middle
-                .burger__button-el.burger__button-el_bottom
-            .burger__body
-              .burger__container.container
-                .burger__inner.inner
-                  nav.burger__nav
-                    ul.burger__nav-list
-                      - var links = [['#', 'Основные элементы'], ['#', 'Слайдер'], ['#', 'Табы'], ['#', 'Галерея'], ['#', 'Форма'], ['#', 'Чекпоинты']]
-                      each val, index in links
-                        li
-                          a(href = val[0])= val[1]
     .header__inner.header__inner_bottom.inner
       .header__bottom-line
         nav.header__nav.header__nav_category
