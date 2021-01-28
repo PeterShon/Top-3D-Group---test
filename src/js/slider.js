@@ -7,23 +7,16 @@ export function slider() {
     // Optional parameters
     loop: true, //бесконечные слайды
     slidesPerView: 2, //слайдов к показу
-    spaceBetween: 67, //расстояние между слайдами
+    spaceBetween: 70, //расстояние между слайдами
     slidesPerGroup: 1, //количество слайдов на свайп (соблюдать целочисленное деление perView/perGroup)
-    shortSwipes: false, //включение/отключение функции короткого свайпа
-    longSwipesMs: 70, //длительность длинного свайпа в МС
     allowTouchMove: false, //без свайпов
     autoplay: {
       delay: 5000,
     },
     // Navigation arrows
     navigation: {
-      nextEl: '.slider__button_next',
-      prevEl: '.slider__button_prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.slider__scrollbar',
+      nextEl: '.slider-nav__button_next',
+      prevEl: '.slider-nav__button_prev',
     },
     // NameSpace
     wrapperClass: 'slider__wrapper',

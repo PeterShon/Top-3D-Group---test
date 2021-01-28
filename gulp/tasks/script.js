@@ -6,12 +6,6 @@ const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack
 const eslint = require('gulp-eslint')
 
 module.exports = function script() {
-  //gulp.src('src/js/**/*')
-  //  .pipe(gulp.dest('docs/js/'))
-
-  gulp.src('src/js/video-yt.js')
-    .pipe(gulp.dest('docs/js'))
-
   return gulp.src('src/js/main.js')
     .pipe(plumber())
     .pipe(eslint({

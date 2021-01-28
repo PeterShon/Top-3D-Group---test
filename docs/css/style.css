@@ -1781,13 +1781,13 @@ select:-webkit-autofill:focus {
   left: 0;
 }
 
-.slider__navigation-box {
+.slider-nav__navigation-box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.slider__button {
+.slider-nav__button {
   position: relative;
   display: flex;
   align-items: center;
@@ -1801,11 +1801,11 @@ select:-webkit-autofill:focus {
   transition: 0.3s;
 }
 
-.slider__button:hover {
+.slider-nav__button:hover {
   background: #FED600;
 }
 
-.slider__button:after {
+.slider-nav__button:after {
   content: '';
   width: 12px;
   height: 19px;
@@ -1813,7 +1813,7 @@ select:-webkit-autofill:focus {
   position: absolute;
 }
 
-.slider__button_next {
+.slider-nav__button_next {
   transform: rotate(180deg) translateX(1px);
 }
 
