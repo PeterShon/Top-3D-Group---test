@@ -657,6 +657,12 @@ body.lock {
   }
 }
 
+@media (max-width: 480px) {
+  body {
+    margin: 3px 0 50px;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -768,6 +774,12 @@ select:-webkit-autofill:focus {
   /*header - nav*/
   /*header - widgets*/
   /*header - bottom*/
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 3px 0 0;
+  }
 }
 
 .header__container {

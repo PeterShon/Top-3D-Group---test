@@ -28,6 +28,9 @@ body {
     @include media-tablet-horizontal {
       margin: 12px 0 50px;
     }
+    @include media-mobile {
+      margin: 3px 0 50px;
+    }
 }
 
 img {
